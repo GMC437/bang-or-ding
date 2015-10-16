@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Bang Or Ding</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="bang">Bang</string>
+    <string name="ding">Ding</string>
 </resources>
