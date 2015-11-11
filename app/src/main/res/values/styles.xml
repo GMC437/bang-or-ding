@@ -5,4 +5,98 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Bang Button Styles -->
+
+    <style name="BangButton">
+
+    <item name="android:background">@drawable/bang_selector</item>
+    <item name="android:text">@string/bang</item>
+    <item name="android:textSize">@dimen/forty_sp</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:layout_marginTop">@dimen/one_hundred_fifty_dp</item>
+    </style>
+
+    <style name="BangButtonLand">
+
+        <item name="android:background">@drawable/bang_selector</item>
+        <item name="android:text">@string/bang</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/fifty_dp</item>
+    </style>
+
+    <style name="BangButtonTab">
+
+        <item name="android:background">@drawable/bang_selector</item>
+        <item name="android:text">@string/bang</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/two_hundred_seventy_five_dp</item>
+    </style>
+
+    <style name="BangButtonTabLand">
+
+        <item name="android:background">@drawable/bang_selector</item>
+        <item name="android:text">@string/bang</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/one_hundred_fifty_dp</item>
+    </style>
+
+    <style name="BangButtonTV">
+
+        <item name="android:background">@drawable/bang_selector</item>
+        <item name="android:text">@string/bang</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/one_hundred_fifty_dp</item>
+    </style>
+
+    <!-- Ding Button Styles -->
+
+    <style name="DingButton">
+
+        <item name="android:background">@drawable/ding_selector</item>
+        <item name="android:text">@string/ding</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/fifty_dp</item>
+    </style>
+
+    <style name="DingButtonLand">
+
+        <item name="android:background">@drawable/ding_selector</item>
+        <item name="android:text">@string/ding</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/thirty_dp</item>
+    </style>
+
+    <style name="DingButtonTab">
+
+        <item name="android:background">@drawable/ding_selector</item>
+        <item name="android:text">@string/ding</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/one_hundred_twenty_five_dp</item>
+    </style>
+
+    <style name="DingButtonTabLand">
+
+        <item name="android:background">@drawable/ding_selector</item>
+        <item name="android:text">@string/ding</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/seventy_five_dp</item>
+    </style>
+
+    <style name="DingButtonTV">
+
+        <item name="android:background">@drawable/ding_selector</item>
+        <item name="android:text">@string/ding</item>
+        <item name="android:textSize">@dimen/forty_sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/fifty_dp</item>
+    </style>
+
 </resources>

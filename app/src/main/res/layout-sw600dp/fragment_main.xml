@@ -6,23 +6,17 @@
               android:background="@color/studio">
 
     <Button
-            android:layout_width="@dimen/one_hundred_fifty_dp"
             android:layout_height="@dimen/seventy_five_dp"
+            android:layout_width="@dimen/one_hundred_fifty_dp"
             android:id="@+id/button_bang"
-            android:background="@color/monza"
-            android:text="@string/bang"
-            android:textSize="@dimen/forty_sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/two_hundred_seventy_five_dp"/>
+            style="@style/BangButtonTab"
+            />
 
     <Button
-            android:layout_width="@dimen/one_hundred_fifty_dp"
             android:layout_height="@dimen/seventy_five_dp"
+            android:layout_width="@dimen/one_hundred_fifty_dp"
             android:id="@+id/button_ding"
-            android:background="@color/curious_blue"
-            android:text="@string/ding"
-            android:textSize="@dimen/forty_sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/one_hundred_dp"/>
+            style="@style/DingButtonTab"
+            />
 
 </LinearLayout>

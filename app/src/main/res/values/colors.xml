@@ -2,7 +2,9 @@
 <resources>
     
     <color name="monza">#CF000F</color>
+    <color name="dark_monza">#800009</color>
     <color name="curious_blue">#3498DB</color>
+    <color name="dark_curious_blue">#0665A2</color>
     <color name="studio">#8E44AD</color>
 
         </resources>

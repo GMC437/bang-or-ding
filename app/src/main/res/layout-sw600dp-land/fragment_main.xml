@@ -6,17 +6,13 @@
               android:background="@color/studio">
 
     <Button
-            android:layout_height="@dimen/seventy_five_dp"
-            android:layout_width="@dimen/one_hundred_fifty_dp"
             android:id="@+id/button_bang"
-            style="@style/BangButtonLand"
+            style="@style/BangButtonTabLand"
             />
 
     <Button
-            android:layout_height="@dimen/seventy_five_dp"
-            android:layout_width="@dimen/one_hundred_fifty_dp"
-            android:id="@+id/button_ding"
-            style="@style/DingButtonLand"
-            />
 
+            android:id="@+id/button_ding"
+            style="@style/DingButtonTabLand"
+            />
 </LinearLayout>
