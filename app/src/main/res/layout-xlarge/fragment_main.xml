@@ -6,17 +6,17 @@
               android:background="@color/studio">
 
     <Button
-            android:layout_height="@dimen/seventy_five_dp"
             android:layout_width="@dimen/one_hundred_fifty_dp"
+            android:layout_height="@dimen/seventy_five_dp"
             android:id="@+id/button_bang"
-            style="@style/BangButtonLand"
+            style="@style/BangButtonTV"
             />
 
     <Button
-            android:layout_height="@dimen/seventy_five_dp"
             android:layout_width="@dimen/one_hundred_fifty_dp"
+            android:layout_height="@dimen/seventy_five_dp"
             android:id="@+id/button_ding"
-            style="@style/DingButtonLand"
+            style="@style/DingButtonTV"
             />
 
 </LinearLayout>

@@ -13,5 +13,11 @@
     <dimen name="one_hundred_dp">100dp</dimen>
     <dimen name="one_hundred_twenty_five_dp">125dp</dimen>
     <dimen name="one_hundred_fifty_dp">150dp</dimen>
+    <dimen name="one_hundred_seventy_five_dp">175dp</dimen>
+    <dimen name="two_hundred_dp">200dp</dimen>
+    <dimen name="two_hundred_twenty_five_dp">225dp</dimen>
+    <dimen name="two_hundred_fifty_dp">250dp</dimen>
+    <dimen name="two_hundred_seventy_five_dp">275dp</dimen>
+    <dimen name="three_hundred_dp">300dp</dimen>
 
 </resources>
