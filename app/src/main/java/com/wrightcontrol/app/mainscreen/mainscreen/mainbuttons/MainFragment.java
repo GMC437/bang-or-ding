@@ -4,21 +4,27 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import com.wrightcontrol.app.R;
 
 /**
  * Created by Grant on 08/10/2015.
  */
 public class MainFragment extends Fragment {
+    private static final String TAG = "MAIN_FRAGMENT";
+    private CheckBox checkBox;
 
     //Vars for soundpool, bang and ding audio
     private SoundPool soundPool;
     private int bang;
     private int ding;
+    private boolean hasEffect = false;
 
     //Vars for the new soundpool object
     private final int maxStreams = 5;
@@ -47,16 +53,33 @@ public class MainFragment extends Fragment {
         Button dingBtn = (Button) view.findViewById(R.id.button_ding);
         dingBtn.setOnClickListener(new Clicker());
 
+        checkBox = (CheckBox) view.findViewById(R.id.checkbox);
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                Log.i(TAG, String.valueOf(b));
+                hasEffect = b;
+                loadBangDing();
+            }
+        });
+
         return view;
     }
 
-    //Creates soundpool and loads the files to correct vars
+    /**
+     * creates a SoundPool object and loads the
+     * appropriate MP3 audio file
+     */
     private void loadBangDing() {
         soundPool = new SoundPool(maxStreams, streamType, srcQuality);
-        bang = soundPool.load(getContext(), R.raw.bang_proj_mptree, loadPriority);
-        ding = soundPool.load(getContext(), R.raw.ding_proj_mptree, loadPriority);
+        if(!hasEffect) {
+            bang = soundPool.load(getContext(), R.raw.bang_proj_mptree, loadPriority);
+            ding = soundPool.load(getContext(), R.raw.ding_proj_mptree, loadPriority);
+        }else {
+            bang = soundPool.load(getContext(), R.raw.bang_with_fx, loadPriority);
+            ding = soundPool.load(getContext(), R.raw.ding_with_fx, loadPriority);
+        }
     }
-
 
     private class Clicker implements View.OnClickListener {
         @Override
